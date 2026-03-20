@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#F0EDE8"/>
+  <ellipse cx="150" cy="420" rx="110" ry="65" fill="#E8D5C4"/>
+  <rect x="130" y="245" width="40" height="48" rx="8" fill="#F5C5A3"/>
+  <ellipse cx="150" cy="195" rx="58" ry="68" fill="#F5C5A3"/>
+  
+      <ellipse cx="150" cy="95" rx="70" ry="80" fill="#C49A6C"/>
+      <path d="M82 140 Q100 160 118 140 Q136 120 154 140 Q172 160 190 140 Q208 120 218 140 L218 180 Q150 200 82 180 Z" fill="#C49A6C"/>
+  <ellipse cx="128" cy="190" rx="8" ry="6" fill="#fff"/>
+  <ellipse cx="172" cy="190" rx="8" ry="6" fill="#fff"/>
+  <circle cx="130" cy="191" r="4" fill="#3D2B1F"/>
+  <circle cx="174" cy="191" r="4" fill="#3D2B1F"/>
+  <circle cx="131" cy="189" r="1.5" fill="#fff"/>
+  <circle cx="175" cy="189" r="1.5" fill="#fff"/>
+  <path d="M119 180 Q128 175 137 180" stroke="#5C3D20" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M163 180 Q172 175 181 180" stroke="#5C3D20" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M148 200 Q143 214 148 218 Q155 218 152 214 Z" fill="none" stroke="#C4956A" stroke-width="1.5"/>
+  <path d="M136 232 Q150 226 164 232" stroke="#C07050" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M136 232 Q150 240 164 232" fill="#D4826A"/>
+  <rect x="0" y="360" width="300" height="40" fill="rgba(10,10,10,0.8)"/>
+  <text x="150" y="385" font-family="sans-serif" font-size="13" font-weight="bold" fill="#F5A623" text-anchor="middle">Wavy Bob</text>
+</svg>

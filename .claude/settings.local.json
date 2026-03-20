@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@14 . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Read(//c/Users/lenovo/OneDrive/Documents/**)",
+      "Bash(npx create-next-app@14 cutcut --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(npm init:*)",
+      "Bash(sed -i 's/\"\"name\"\": \"\"CutCut\"\"/\"\"name\"\": \"\"cutcut\"\"/' package.json)",
+      "Bash(npm install:*)",
+      "Bash(node scripts/gen-placeholders.js)",
+      "Bash(npm run:*)",
+      "Bash(timeout 90 npx next build)",
+      "Bash(npx next:*)",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(printf 'GEMINI_API_KEY=AIzaSyBNuMogAMGcUe4JuuW2BXJDANZghfI4f3A\\\\n')",
+      "Bash(gh auth:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
