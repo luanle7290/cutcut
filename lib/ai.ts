@@ -1,6 +1,6 @@
 /**
  * AI abstraction layer — swap models here without touching API route.
- * Currently uses Gemini 2.5 Flash Image Preview (free tier, 500 images/day).
+ * Currently uses Gemini 2.0 Flash Preview Image Generation (free tier).
  * Phase 2: swap to Fal.ai for higher quality.
  */
 
@@ -20,9 +20,9 @@ export async function generateHairstyle(
   const { GoogleGenerativeAI } = await import('@google/generative-ai')
   const genAI = new GoogleGenerativeAI(apiKey)
 
-  // gemini-2.5-flash-preview-05-20 supports image output (500 images/day free)
+  // gemini-2.0-flash-preview-image-generation: accepts image input + outputs image
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-preview-05-20',
+    model: 'gemini-2.0-flash-preview-image-generation',
     generationConfig: {
       // @ts-expect-error — responseModalities not yet typed in SDK but required for image output
       responseModalities: ['TEXT', 'IMAGE'],
