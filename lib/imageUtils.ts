@@ -49,22 +49,25 @@ export function fileToDataUrl(file: File): Promise<string> {
   })
 }
 
-/** Convert public hairstyle image path → base64 via fetch */
+/** Convert public hairstyle image path → base64 JPEG via canvas (handles SVG too) */
 export async function urlToBase64(
   imageUrl: string
 ): Promise<{ base64: string; mimeType: string }> {
-  const res = await fetch(imageUrl)
-  const blob = await res.blob()
   return new Promise((resolve, reject) => {
-    const reader = new FileReader()
-    reader.onload = () => {
-      const dataUrl = reader.result as string
-      const base64 = dataUrl.split(',')[1]
-      const mimeType = blob.type || 'image/jpeg'
-      resolve({ base64, mimeType })
+    const img = new Image()
+    img.onload = () => {
+      const w = img.naturalWidth || 300
+      const h = img.naturalHeight || 400
+      const canvas = document.createElement('canvas')
+      canvas.width = w
+      canvas.height = h
+      const ctx = canvas.getContext('2d')!
+      ctx.drawImage(img, 0, 0, w, h)
+      const dataUrl = canvas.toDataURL('image/jpeg', 0.85)
+      resolve({ base64: dataUrl.split(',')[1], mimeType: 'image/jpeg' })
     }
-    reader.onerror = reject
-    reader.readAsDataURL(blob)
+    img.onerror = reject
+    img.src = imageUrl
   })
 }
 

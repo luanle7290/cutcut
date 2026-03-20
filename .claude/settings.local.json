@@ -19,7 +19,11 @@
       "Bash(gh auth:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(xxd /c/Users/lenovo/Downloads/CutCut/public/hairstyles/pixie-cut.jpg)"
     ]
   }
 }
